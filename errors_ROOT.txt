@@ -103,3 +103,7 @@ marianne@marianne-kontor:~/Documents$ find /usr/lib/* -name "libX11.*"
 marianne@marianne-kontor:~/Documents$ 
 
 
+
+TRY:
+https://root-forum.cern.ch/t/x11-problem/16276
+
