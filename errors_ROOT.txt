@@ -1,0 +1,94 @@
+Scanning dependencies of target G__ASImage
+[ 79%] Generating G__ASImage.cxx, ../../lib/libASImage_rdict.pcm, ../../lib/libASImage.rootmap
+[ 79%] Built target G__Gpad
+Scanning dependencies of target G__Html
+[ 79%] Built target G__Minuit
+[ 79%] Generating G__Html.cxx, ../lib/libHtml_rdict.pcm, ../lib/libHtml.rootmap
+Scanning dependencies of target Fumili
+[ 79%] Building CXX object math/fumili/CMakeFiles/Fumili.dir/G__Fumili.cxx.o
+[ 79%] Built target G__Postscript
+[ 79%] Building CXX object math/fumili/CMakeFiles/Fumili.dir/src/TFumili.cxx.o
+[ 79%] Built target G__GX11TTF
+Scanning dependencies of target SpectrumPainter
+[ 79%] Building CXX object hist/spectrumpainter/CMakeFiles/SpectrumPainter.dir/G__SpectrumPainter.cxx.o
+[ 79%] Built target G__ASImage
+Scanning dependencies of target Postscript
+[ 79%] Building CXX object graf2d/postscript/CMakeFiles/Postscript.dir/G__Postscript.cxx.o
+[ 79%] Built target G__Html
+Scanning dependencies of target GX11TTF
+[ 79%] Building CXX object hist/spectrumpainter/CMakeFiles/SpectrumPainter.dir/src/TSpectrum2Painter.cxx.o
+[ 79%] Building CXX object graf2d/x11ttf/CMakeFiles/GX11TTF.dir/G__GX11TTF.cxx.o
+[ 79%] Building CXX object graf2d/x11ttf/CMakeFiles/GX11TTF.dir/src/TGX11TTF.cxx.o
+[ 79%] Building CXX object graf2d/postscript/CMakeFiles/Postscript.dir/src/TImageDump.cxx.o
+[ 79%] Building CXX object graf2d/postscript/CMakeFiles/Postscript.dir/src/TPDF.cxx.o
+[ 79%] Linking CXX shared library ../../lib/libProofPlayer.so
+[ 79%] Building CXX object math/fumili/CMakeFiles/Fumili.dir/src/TFumiliMinimizer.cxx.o
+[ 79%] Linking CXX shared library ../../lib/libGX11TTF.so
+[ 79%] Built target ProofPlayer
+Scanning dependencies of target Html
+[ 79%] Building CXX object html/CMakeFiles/Html.dir/G__Html.cxx.o
+[ 80%] Built target GX11TTF
+[ 80%] Building CXX object html/CMakeFiles/Html.dir/src/TClassDocOutput.cxx.o
+[ 80%] Building CXX object graf2d/postscript/CMakeFiles/Postscript.dir/src/TPostScript.cxx.o
+[ 80%] Linking CXX shared library ../../lib/libFumili.so
+[ 80%] Built target Fumili
+Scanning dependencies of target Minuit
+[ 80%] Building CXX object math/minuit/CMakeFiles/Minuit.dir/G__Minuit.cxx.o
+[ 80%] Building CXX object graf2d/postscript/CMakeFiles/Postscript.dir/src/TSVG.cxx.o
+[ 80%] Building CXX object html/CMakeFiles/Html.dir/src/TDocDirective.cxx.o
+[ 80%] Building CXX object math/minuit/CMakeFiles/Minuit.dir/src/TFitter.cxx.o
+[ 80%] Building CXX object graf2d/postscript/CMakeFiles/Postscript.dir/src/TTeXDump.cxx.o
+Scanning dependencies of target Gpad
+[ 80%] Building CXX object math/minuit/CMakeFiles/Minuit.dir/src/TLinearFitter.cxx.o
+[ 80%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/G__Gpad.cxx.o
+[ 80%] Linking CXX shared library ../../lib/libPostscript.so
+[ 80%] Building CXX object html/CMakeFiles/Html.dir/src/TDocInfo.cxx.o
+[ 80%] Built target Postscript
+Scanning dependencies of target ASImage
+[ 80%] Building CXX object graf2d/asimage/CMakeFiles/ASImage.dir/G__ASImage.cxx.o
+[ 80%] Building CXX object html/CMakeFiles/Html.dir/src/TDocOutput.cxx.o
+[ 80%] Building CXX object html/CMakeFiles/Html.dir/src/TDocParser.cxx.o
+[ 80%] Building CXX object graf2d/asimage/CMakeFiles/ASImage.dir/src/TASImage.cxx.o
+[ 80%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TAttCanvas.cxx.o
+[ 80%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TButton.cxx.o
+[ 80%] Building CXX object math/minuit/CMakeFiles/Minuit.dir/src/TLinearMinimizer.cxx.o
+[ 80%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TCanvas.cxx.o
+[ 80%] Building CXX object math/minuit/CMakeFiles/Minuit.dir/src/TMinuit.cxx.o
+[ 80%] Building CXX object math/minuit/CMakeFiles/Minuit.dir/src/TMinuitMinimizer.cxx.o
+[ 80%] Linking CXX shared library ../../lib/libSpectrumPainter.so
+[ 80%] Building CXX object graf2d/asimage/CMakeFiles/ASImage.dir/src/TASPluginGS.cxx.o
+[ 81%] Built target SpectrumPainter
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TClassTree.cxx.o
+[ 81%] Building CXX object html/CMakeFiles/Html.dir/src/THtml.cxx.o
+[ 81%] Linking CXX shared library ../../lib/libASImage.so
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TColorWheel.cxx.o
+/usr/bin/ld: cannot find -l/usr/lib/x86_64-linux-gnu/libX11.so
+collect2: error: ld returned 1 exit status
+graf2d/asimage/CMakeFiles/ASImage.dir/build.make:179: recipe for target 'lib/libASImage.so' failed
+make[2]: *** [lib/libASImage.so] Error 1
+CMakeFiles/Makefile2:22307: recipe for target 'graf2d/asimage/CMakeFiles/ASImage.dir/all' failed
+make[1]: *** [graf2d/asimage/CMakeFiles/ASImage.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TControlBar.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TControlBarButton.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TCreatePrimitives.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TDialogCanvas.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TGroupButton.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TInspectCanvas.cxx.o
+[ 81%] Linking CXX shared library ../../lib/libMinuit.so
+[ 81%] Linking CXX shared library ../lib/libHtml.so
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TPad.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TPadPainter.cxx.o
+[ 81%] Built target Minuit
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TPaveClass.cxx.o
+[ 81%] Built target Html
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TRatioPlot.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TSlider.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TSliderBox.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TView.cxx.o
+[ 81%] Building CXX object graf2d/gpad/CMakeFiles/Gpad.dir/src/TViewer3DPad.cxx.o
+[ 81%] Linking CXX shared library ../../lib/libGpad.so
+[ 81%] Built target Gpad
+Makefile:151: recipe for target 'all' failed
+make: *** [all] Error 2
+
