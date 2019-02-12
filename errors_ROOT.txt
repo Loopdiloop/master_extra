@@ -113,6 +113,7 @@ SOLUTION THAT WORKED:
 Delete everything from the old build in destination folder.
 Ran command from:
   https://root-forum.cern.ch/t/failure-when-building-root-6-12-04-on-ubuntu-17-10/27585
+  Command line: Dbuiltin_afterimage=ON
 Rebuild the whole thing as described in https://root.cern.ch/building-root
 Built 100% without error. 
 
