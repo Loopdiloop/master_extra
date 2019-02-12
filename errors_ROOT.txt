@@ -107,3 +107,13 @@ marianne@marianne-kontor:~/Documents$
 TRY:
 https://root-forum.cern.ch/t/x11-problem/16276
 
+
+
+SOLUTION THAT WORKED:
+Delete everything from the old build in destination folder.
+Ran command from:
+  https://root-forum.cern.ch/t/failure-when-building-root-6-12-04-on-ubuntu-17-10/27585
+Rebuild the whole thing as described in https://root.cern.ch/building-root
+Built 100% without error. 
+
+Built ROOT 16.12.06 on Ubuntu 18.04.1 LTS.
