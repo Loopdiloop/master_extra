@@ -1,0 +1,20 @@
+
+
+Qkinz make-error on Ubuntu
+
+marianne@marianne-kontor:~/Documents/software/Qkinz-master$ ls
+app     defaults.pri  LICENSE   qkinz.desktop  Qkinz.pro  resources   scripts  tests
+debian  Doxyfile      Makefile  Qkinz.png      README.md  screenshot  src
+marianne@marianne-kontor:~/Documents/software/Qkinz-master$ qmake Qkinz.pro
+marianne@marianne-kontor:~/Documents/software/Qkinz-master$ make
+cd src/ && ( test -e Makefile || /usr/lib/qt5/bin/qmake -o Makefile /home/marianne/Documents/software/Qkinz-master/src/src.pro ) && make -f Makefile 
+Project ERROR: Unknown module(s) in QT: webenginewidgets
+Makefile:46: recipe for target 'sub-src-make_first' failed
+make: *** [sub-src-make_first] Error 3
+marianne@marianne-kontor:~/Documents/software/Qkinz-master$ 
+
+WHAT actually is the error?
+  Missing dependency? webenginewidgets?
+  
+  
+The search continues..
