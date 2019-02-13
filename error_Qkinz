@@ -18,3 +18,32 @@ WHAT actually is the error?
   
   
 The search continues..
+
+
+INSTALLING QTcreator?
+It is already installed.. Tried to follow the installation:
+  marianne@marianne-kontor:~$ sudo apt-get install qtcreator
+  Reading package lists... Done
+  Building dependency tree       
+  Reading state information... Done
+  qtcreator is already the newest version (4.5.2-3ubuntu2).
+  0 upgraded, 0 newly installed, 0 to remove and 7 not upgraded.
+  marianne@marianne-kontor:~$ sudo apt-get upgrade
+  Reading package lists... Done
+  Building dependency tree       
+  Reading state information... Done
+  Calculating upgrade... Done
+  The following packages have been kept back:
+    libgl1-mesa-dri libxatracker2 linux-generic linux-headers-generic linux-image-generic
+    mesa-va-drivers mesa-vdpau-drivers
+  0 upgraded, 0 newly installed, 0 to remove and 7 not upgraded.
+  marianne@marianne-kontor:~$ sudo apt-get install qt5-default
+  Reading package lists... Done
+  Building dependency tree       
+  Reading state information... Done
+  qt5-default is already the newest version (5.9.5+dfsg-0ubuntu1).
+  0 upgraded, 0 newly installed, 0 to remove and 7 not upgraded.
+  marianne@marianne-kontor:~$
+  
+  Can try to reinstall completely, haven't done that yet..
+
