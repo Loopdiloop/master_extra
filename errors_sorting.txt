@@ -2,11 +2,19 @@ Error when trying to run the sorting program.
 
 Main problem: "warning: enum constant in boolean context"
 
+Root is installed properly and reachable by "$root" as usual.
+Make file uses g++
+
+$ g++ --version
+g++ (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+....
+
+
+
 FULL OUTPUT:
 
 
-
-marianne@marianne-kontor:~/Documents/master/expermiment/sorting$ make
+.../sorting$ make
        [CXX] user_sort.cpp
 user_sort.cpp: In member function ‘virtual bool UserXY::Sort(const Event&)’:
 user_sort.cpp:486:7: warning: variable ‘weight’ set but not used [-Wunused-but-set-variable]
@@ -50,14 +58,18 @@ make[1]: *** [SiriusRoutine.o] Error 1
 make[1]: Leaving directory '/home/marianne/Documents/master/expermiment/sorting/lib'
 Makefile:80: recipe for target 'lib/libsorting.a' failed
 make: *** [lib/libsorting.a] Error 2
-marianne@marianne-kontor:~/Documents/master/expermiment/sorting$ 
+.../sorting$ 
 
+
+Possible solutions:
+https://stackoverflow.com/questions/38659115/make-fails-with-error-cannot-convert-stdistream-aka-stdbasic-istreamchar
+http://eigen.tuxfamily.org/bz/show_bug.cgi?id=1402
 
 Seems to be a "bool" conversion problem. Might be Eigen.
 
 Tried to install newest version of Eigen(3.3.7) from http://eigen.tuxfamily.org/index.php?title=Main_Page
 
-Didn't seem to work.
+Didn't seem to work yet..
 
 
 
