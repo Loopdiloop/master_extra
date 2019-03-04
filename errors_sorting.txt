@@ -100,6 +100,35 @@ All occurances of ipar:
 .../sorting$ 
 
 
+After looking more thoroughly at the code in question:
+
+The class:
+static bool set_par(Parameters& parameters, std::istream& ipar,
+                    const std::string& name, int size)
+{
+    Parameter* p = parameters.Find(name);
+    if( !p )
+        return false;
+
+    std::vector<Parameter::param_t> values;
+    float tmp;
+    for(int i=0; i<size; ++i) {
+        tmp = 0;
+        ipar >> tmp; //this bitwise right shifts ipar by tmp bits.
+        values.push_back(tmp);
+    }
+    p->Set( values );
+    return ipar;
+}
+
+ipar is of type defined as: std::istringstream ipar(values.c_str()); 
+       later copied as: std::istream_iterator<float>(ipar)
+
+How can this turn into a bool?
+The function gets ipar, bit shiftes is by tmp, (i=0; i<size; ++i), so size times.
+
+Possible solution:
+https://stackoverflow.com/questions/20169987/using-stringstream-to-input-output-a-bool-value
 
 
 
