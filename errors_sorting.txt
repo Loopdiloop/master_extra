@@ -1,3 +1,5 @@
+NOT SOLVED YET.
+
 Error when trying to run the sorting program.
 
 Main problem: "warning: enum constant in boolean context"
@@ -11,7 +13,7 @@ g++ (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
 
 
 
-FULL OUTPUT:
+FULL ERROR OUTPUT:
 
 
 .../sorting$ make
