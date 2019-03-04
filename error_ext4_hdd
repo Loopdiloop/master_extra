@@ -1,8 +1,0 @@
-
-
-Had installed and tried mounting/configuring an ext4 HDD (with Ubuntu).
-Could only make directories of access through sudo in command line.
-Had no rights otherwise.
-
-The solution was given in: https://askubuntu.com/questions/514451/new-hdd-formating-on-ext4-root-permission
-Ran: sudo chmod -R a+rw /media/name_of_HDD
