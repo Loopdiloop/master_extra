@@ -1,4 +1,4 @@
-
+SOLVED
 
 Had installed and tried mounting/configuring an ext4 HDD (with Ubuntu).
 Could only make directories of access through sudo in command line.
