@@ -131,4 +131,19 @@ Possible solution:
 https://stackoverflow.com/questions/20169987/using-stringstream-to-input-output-a-bool-value
 
 
+SOLUTION:
+Use current/newer version of the sorting program!
+See the forked project from the Oslo Cyclotron lab:
+https://github.com/Loopdiloop/usersort
 
+The problem was seemingly in the function above (static bool set_par), but in the new version it was dramatically changed to return true/false, not ipar itself (which isn't possibly a bool w/ newer compilers..)
+
+This fixed most of the problem and the programs now runs after minor bug fixes.
+For example had this (https://root-forum.cern.ch/t/solved-libcore-so-cannot-open-shared-object-file-no-such/12593)
+problem, where the solution worked for the corresponding bug. (libCore.so not found)
+
+The only bug left that I am aware of is general warnings for enum to bool. 
+(Eg. Unpacker.cpp:71:24: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 return ERROR;
+                        ^~~~~ )
+Still runs. Solved for now :)
