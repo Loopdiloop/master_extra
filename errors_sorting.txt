@@ -73,6 +73,33 @@ Tried to install newest version of Eigen(3.3.7) from http://eigen.tuxfamily.org/
 
 Didn't seem to work yet..
 
+Additional problem:
+ipar cannot be converted to 'bool'
+
+All occurances of ipar:
+
+.../sorting$ grep -rnw '.' -e 'ipar'
+./lib/Parameters.cpp:136:    std::istringstream ipar(values.c_str());
+./lib/Parameters.cpp:138:    std::copy(std::istream_iterator<float>(ipar), std::istream_iterator<float>(),
+./lib/SiriusRoutine.cpp:81:static bool set_par(Parameters& parameters, std::istream& ipar,
+./lib/SiriusRoutine.cpp:92:        ipar >> tmp;
+./lib/SiriusRoutine.cpp:100:    return ipar;
+./lib/SiriusRoutine.cpp:103:static bool set_gainshift(Parameters& parameters, std::istream& ipar)
+./lib/SiriusRoutine.cpp:105:    return set_par(parameters, ipar, "gain_e",    64 )
+./lib/SiriusRoutine.cpp:106:        && set_par(parameters, ipar, "gain_de",   64 )
+./lib/SiriusRoutine.cpp:107:        && set_par(parameters, ipar, "gain_ge",    6 )
+./lib/SiriusRoutine.cpp:108:        && set_par(parameters, ipar, "gain_na",   32 )
+./lib/SiriusRoutine.cpp:109:        && set_par(parameters, ipar, "shift_e",   64 )
+./lib/SiriusRoutine.cpp:110:        && set_par(parameters, ipar, "shift_de",  64 )
+./lib/SiriusRoutine.cpp:111:        && set_par(parameters, ipar, "shift_ge",   6 )
+./lib/SiriusRoutine.cpp:112:        && set_par(parameters, ipar, "shift_na",  32 )
+./lib/SiriusRoutine.cpp:113:        && set_par(parameters, ipar, "shift_tge",  6 )
+./lib/SiriusRoutine.cpp:114:        && set_par(parameters, ipar, "shift_tna", 32 )
+./lib/SiriusRoutine.cpp:115:        && set_par(parameters, ipar, "gain_tge",   6 )
+./lib/SiriusRoutine.cpp:116:        && set_par(parameters, ipar, "gain_tna",  32 );
+.../sorting$ 
+
+
 
 
 
