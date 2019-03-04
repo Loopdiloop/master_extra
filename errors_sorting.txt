@@ -1,0 +1,64 @@
+Error when trying to run the sorting program.
+
+Main problem: "warning: enum constant in boolean context"
+
+FULL OUTPUT:
+
+
+
+marianne@marianne-kontor:~/Documents/master/expermiment/sorting$ make
+       [CXX] user_sort.cpp
+user_sort.cpp: In member function ‘virtual bool UserXY::Sort(const Event&)’:
+user_sort.cpp:486:7: warning: variable ‘weight’ set but not used [-Wunused-but-set-variable]
+   int weight = 1;
+       ^~~~~~
+user_sort.cpp:330:61: warning: ‘id_b’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     m_back->Fill( (int)calib( raw, gain_e[8*id_b], shift_e[8*id_b] ), id_b );
+                                                            ~^~~~~
+user_sort.cpp:330:29: warning: ‘raw’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     m_back->Fill( (int)calib( raw, gain_e[8*id_b], shift_e[8*id_b] ), id_b );
+                        ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make -C lib libsorting.a
+make[1]: Entering directory '/home/marianne/Documents/master/expermiment/sorting/lib'
+ [other CXX] Histogram2D.cpp
+ [other CXX] Unpacker.cpp
+Unpacker.cpp: In member function ‘bool Unpacker::UnpackOneEvent(unsigned int, Event&)’:
+Unpacker.cpp:47:24: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 return ERROR;
+                        ^~~~~
+Unpacker.cpp:51:24: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 return ERROR;
+                        ^~~~~
+Unpacker.cpp:54:24: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 return ERROR;
+                        ^~~~~
+Unpacker.cpp:59:24: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 return ERROR;
+                        ^~~~~
+Unpacker.cpp:62:24: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 return ERROR;
+                        ^~~~~
+ [other CXX] FileReader.cpp
+ [other CXX] RateMeter.cpp
+ [other CXX] SiriusRoutine.cpp
+SiriusRoutine.cpp: In function ‘bool set_par(Parameters&, std::istream&, const string&, int)’:
+SiriusRoutine.cpp:92:12: error: cannot convert ‘std::istream {aka std::basic_istream<char>}’ to ‘bool’ in return
+     return ipar;
+            ^~~~
+Makefile:77: recipe for target 'SiriusRoutine.o' failed
+make[1]: *** [SiriusRoutine.o] Error 1
+make[1]: Leaving directory '/home/marianne/Documents/master/expermiment/sorting/lib'
+Makefile:80: recipe for target 'lib/libsorting.a' failed
+make: *** [lib/libsorting.a] Error 2
+marianne@marianne-kontor:~/Documents/master/expermiment/sorting$ 
+
+
+Seems to be a "bool" conversion problem. Might be Eigen.
+
+Tried to install newest version of Eigen(3.3.7) from http://eigen.tuxfamily.org/index.php?title=Main_Page
+
+Didn't seem to work.
+
+
+
+
