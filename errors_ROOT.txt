@@ -1,3 +1,8 @@
+SOLVED
+
+Error when attempting to build ROOT 6:
+
+....
 Scanning dependencies of target G__ASImage
 [ 79%] Generating G__ASImage.cxx, ../../lib/libASImage_rdict.pcm, ../../lib/libASImage.rootmap
 [ 79%] Built target G__Gpad
